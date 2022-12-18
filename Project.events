@@ -1,0 +1,14 @@
+a:1:{s:5:"form1";a:5:{s:7:"button4";a:1:{s:7:"onclick";s:184:"$result = c("openDlg1")->execute();
+if ($result)
+{
+$arr = c("openDlg1")->files;
+foreach ($arr as $i=>$file)
+$arr[$i] = basename($file);
+c("listBox1")->items->setArray($arr);
+}
+";}s:7:"button1";a:1:{s:7:"onclick";s:73:"c("sqPlayer1")->open(
+c("openDlg1")->fileName);
+c("sqPlayer1")->play();";}s:7:"button3";a:1:{s:7:"onclick";s:24:"c("sqPlayer1")->pause();";}s:7:"button2";a:1:{s:7:"onclick";s:23:"c("sqPlayer1")->stop();";}s:8:"listbox1";a:1:{s:7:"onclick";s:103:"$music = c("listBox1")->items->selected;
+c("sqPlayer1")->fileName = $music;
+c("sqPlayer1")->play();
+";}}}
